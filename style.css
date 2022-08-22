@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.img {
+    max-width: 100%;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+
+
+body {
+    background-color: var(--dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+    width: 100%;
+    min-height: calc(100vh - 0.1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 2rem;
+}
+
+.card {
+    width: min(100%, 350px);
+    background: white;
+    border-radius: 15px;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.profile-picture {
+    position: relative;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+}
+
+.user-info {
+    padding-top: 4.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgb(229, 223, 223);
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .8rem;
+}
+
+.user-info .name h1 {
+    color: var(--very-dark-desaturated-blue);
+    padding-right: .5rem;
+}
+
+.user-info .name p {
+    color: var(--dark-grayish-blue);
+}
+
+.user-info .city {
+    margin-bottom: 1.5rem;
+}
+
+.user-info .city p {
+    color: var(--dark-grayish-blue);
+}
+
+.data {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: clamp(.4rem, 1rem, 1.3rem);
+    padding: 2rem 1.8rem 2rem;
+}
+
+
+.data article span {
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: .3rem;
+}
+
+.data article small {
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 2px;
+}
